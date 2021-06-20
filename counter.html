@@ -1,0 +1,61 @@
+<!-- Task: Counter
+     Create a Mini Counter that count up and down by 1 number 
+    Contain: Button Plus and Minus, Along with the displayment of number -->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counter </title>
+
+        <style>
+            .Counter {
+                margin: 0 auto;
+                width: 50%;
+                height: 100%;
+
+                /* Canh giua 3 lines sau */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            button, p {
+                display: inline-block;
+                margin-left: 15px;
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
+                background: linear-gradient(to right, #00AAFF, #00ff6c);
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+        </style>
+
+
+
+    </head>
+
+
+    <body>
+        <h2> Counter Up and Down </h2>
+        <div class="Counter">
+            <button id="increment"> + </button> 
+            <p id="number"> 0 </p>
+            <button id="decrement"> - </button>
+        </div>
+
+        <script src="Counter.js"> </script>
+
+    </body>
+</html>
