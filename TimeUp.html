@@ -1,0 +1,50 @@
+<!-- Mini Task: Timer ! -->
+<!-- Make sure to put files HTML, CSS, and JS in the same folder -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIMER</title>
+
+        <style>
+            body {
+                background: linear-gradient(to right, #00AAFF, #00ff6c);
+            }
+
+            #container {
+                /* Declare the flex container properties */
+                display: flex;
+
+                /* COLUMN value stacks the flex items vertically (top -> bottom)  */
+                flex-direction: column;
+
+                /* Position contents at the center (Horizontal) of the Screen */ 
+                justify-content: center;
+
+                /* Position contents at the center (Vertical) of the Screen */
+                align-items: center;
+                height: 100%;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+        <div id="container">
+            <div id="UserInput">
+                <input type="text" id="inputTime" placeholder="Enter Time (Seconds)">
+                <button id="Start" onclick="onStart()">Start</button>
+                <button id="Stop">Stop</button>
+            </div>
+
+            <h2 id="Result">Let's Count Your Time!</h2>
+        </div>
+     
+        
+        <script src="TimeUpp.js"> </script>
+    </body>
+
+</html>
