@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ColorQuiz </title>
+        <style>
+            body {
+                font-family: 'Courier New', Courier, monospace;
+                
+            }
+
+            #container { 
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #ColorContainer {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+
+                /* Set length of width between Circle spaces */
+                width: 50%;
+                
+            }
+
+            .ColorItem {
+                height: 70px;
+                width: 70px;
+                border: 1px solid black;
+                border-radius: 50%;
+
+            }
+
+            #IDColor {
+                font-weight: bold;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="ColorContainer">
+                <button class="colorItem item1"> </button>
+                <button class="colorItem item2"> </button>
+                <button class="coloritem item3"> </button>
+            </div>
+            <p id="IDColor"> hsl</p>
+            <p id="Statement"> Pick One... </p>
+           
+        </div>
+        <script src="ColorQuiz.js"> </script>
+
+    </body>
+
