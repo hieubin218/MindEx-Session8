@@ -1,0 +1,97 @@
+/* (*{}) selector selects all elements - inner elements  */
+* {
+    box-sizing: content-box;
+    margin: 0px;
+    /* PADDING is used to create space around an element's content itself  */
+    padding: 0px;
+
+}
+
+
+body {
+    background: linear-gradient(to right, #00AAFF, #00ff6c);
+}
+
+
+.CalculatorContainer {
+    /* MARGIN creates space around the border of element's content */
+    margin: 10px auto;
+    width: 200px;
+}
+
+.screen {
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    /* POSITION determines how an element is positioned in the document */
+    /* RELATIVE position means follow the folow of document */
+    position: relative;
+}
+
+.button {
+    width: 100%;
+    /* create layout consist of parent and child elements by columns and rows */
+    display: grid;
+    /* Divide the table by 4 columns by 4 property values */
+    /* 1fr means the size (width) of each column */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* Set up the button with decoration */
+.item {
+    height: 50px;
+    outline: none;
+    border: 0.1px solid black;
+}
+
+
+/* Set up button reaction by Mouse Hover */
+.item:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+/* Update and Expand button AC bigger and change unique color */
+.item1 {
+    grid-column: 1/ span 2 ;
+    background-color: orange;
+}
+
+.item2 {
+    background-color: orange;
+}
+
+.item4,
+.item8,
+.item12,
+.item16,
+.item20 {
+    background-color: rgb(172, 160, 160);
+}
+
+
+/* Set Up Design of displayment of number on the Calculator Screen */
+.screen .inputFromButton {
+    /* ABSOLUTE position means not follow the flow of document  */ 
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 40px;
+    color: white;
+
+    /* Z-index specifies the stack order of an element  
+       If z-index = -1, means that element placed behind something 
+       index followed by priority with each element */ 
+
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* NOTE:
+- It is better to use Position: relative by parents 
+and then use Absolute position by its child
+--> to show the element by (absolute) of child inside parents element.
